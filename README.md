@@ -13,4 +13,13 @@ The goal for this project is reduce food waste in King County and our solution w
 
 The published site can be viewed here: https://github.com/UW-INFO442-SP23/furious-five.git
 
+## Team
+
+- Bianca (Yu Wen) Su 
+- Fatima Dineh
+- Trang Tran
+- Eivy Cedeno
+- Mehr Mehta
+
+
 
