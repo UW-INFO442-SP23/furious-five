@@ -6,3 +6,11 @@ The goal for this project is reduce food waste in King County and our solution w
 
 ## Features
 
+- Food Post Forum (Restaurants can input their list of food inventory that they want to give away)
+- Login authentication (Restaurants will register their name and information on the website which will be used to login to their page later)
+
+## GitHub Page
+
+The published site can be viewed here: https://github.com/UW-INFO442-SP23/furious-five.git
+
+
