@@ -1,4 +1,4 @@
-#                                            Furious-Five
+# Furious-Five
 
 ## Our Mission
 
