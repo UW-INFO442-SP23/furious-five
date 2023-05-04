@@ -20,7 +20,6 @@ h2.community {
 h2.contribute {
     font-family: Arial, Helvetica, sans-serif;
     color: #3D3E3C;
-    text-align: right;
 }
 
 p.about {
@@ -37,8 +36,8 @@ p.community {
 p.contribute {
     font-family: Arial, Helvetica, sans-serif;
     color: #3D3E3C;
-    text-align: right;
 }
+
 
 section.about {
     padding: 5rem;
@@ -51,4 +50,30 @@ section.community {
 
 section.contribute {
     padding: 5rem;
+}
+
+.communitybtn {
+    padding: 0.8rem;
+    border-radius: 25px;
+    background-color: #3D3E3C;
+    color: white;
+    border-color: white;
+}
+
+.contributebtn {
+    padding: 0.8rem;
+    border-radius: 25px;
+    background-color: #F5F3F3;
+    color: #3D3E3C;
+    border-color: #3D3E3C;
+}
+
+img.community {
+    width: 1rem;
+    height: 1rem;
+}
+
+img.contribute {
+    width: 1rem;
+    height: 1rem;
 }
