@@ -1,1 +1,54 @@
 
+/* homepage styling */
+
+div.home-container {
+    background-color: #F5F3F3;
+}
+
+h1.about {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3E3C;
+    text-align: center;
+    font-size: 5rem;
+}
+
+h2.community {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h2.contribute {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3E3C;
+    text-align: right;
+}
+
+p.about {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3E3C;
+    text-align: center;
+}
+
+p.community {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+p.contribute {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3E3C;
+    text-align: right;
+}
+
+section.about {
+    padding: 5rem;
+}
+
+section.community {
+    background-color: #3D3E3C;
+    padding: 5rem;
+}
+
+section.contribute {
+    padding: 5rem;
+}
