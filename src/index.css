@@ -77,3 +77,12 @@ img.contribute {
     width: 1rem;
     height: 1rem;
 }
+
+.navigator {
+    width: 100%;
+    height: 5rem;
+    text-align: left;
+    background-color: #3D3E3C;
+    padding: .5rem;
+    color: white;
+}
