@@ -129,11 +129,21 @@ div.home-container {
 form-submit.active {
     color: #fff;
 }
+<<<<<<< HEAD
 /* .navigator {
+=======
+
+.navigator {
+>>>>>>> 93732d335bf7bcfb9d28b20e9853d6f78b388487
     width: 100%;
     height: 5rem;
     text-align: left;
-    background-color: #3D3E3C;
+    background-color: white;
     padding: .5rem;
+<<<<<<< HEAD
     color: white;
 } */
+=======
+    color: #3D3E3C;
+}
+>>>>>>> 93732d335bf7bcfb9d28b20e9853d6f78b388487
