@@ -78,6 +78,7 @@ img.contribute {
     height: 1rem;
 }
 
+<<<<<<< HEAD
 
 /* #form */
 
@@ -129,3 +130,13 @@ div.home-container {
 form-submit.active {
     color: #fff;
 }
+=======
+.navigator {
+    width: 100%;
+    height: 5rem;
+    text-align: left;
+    background-color: #3D3E3C;
+    padding: .5rem;
+    color: white;
+}
+>>>>>>> 5f849598a8242776c896afcd490a3198bbb0d6f0
