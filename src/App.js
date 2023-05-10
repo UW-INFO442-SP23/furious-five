@@ -11,6 +11,7 @@ import Posts from './components/Posts/posts.js'
 export default function App(props) {
     return (
       <div>
+        <NavBar/>
         <Router>
           <Routes>
           <Route path="*" element={<Home />} />
