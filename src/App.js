@@ -11,6 +11,7 @@ import ViewPosts from './components/Posts/viewposts.js'
 export default function App(props) {
     return (
       <div>
+        <NavBar/>
         <Router>
           <Routes>
           <Route path="*" element={<Home />} />
