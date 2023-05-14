@@ -81,6 +81,10 @@ img.contribute {
 
 /* #form */
 
+div.form-container {
+    background-color: #F5F3F3;
+}
+
 .formheader{
     display: flex;
 }
@@ -98,6 +102,11 @@ h4.post {
     color: #3D3E3C;
     text-align: center;
 }
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
 
 
 /* /* .navigator {

@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from "r
 
 export default function Form(props) {
   return (
+    <div class="home-container">
 
     <div className="formheader">
     <div className="container">
@@ -122,6 +123,7 @@ export default function Form(props) {
       </div>
     </div>
 
+    </div>
     </div>
     </div>
     </div>
