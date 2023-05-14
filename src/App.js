@@ -6,7 +6,7 @@ import Form from './components/Form/form.js'
 import Home from './components/Home/home.js'
 import Login from './components/Login/login.js'
 import Posts from './components/Posts/posts.js'
-
+import ViewPosts from './components/Posts/viewposts.js'
 
 export default function App(props) {
     return (
