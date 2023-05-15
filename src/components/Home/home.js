@@ -10,7 +10,7 @@ export default function Home(props) {
             </section>
 
             <section className="community">
-                <img className="community" src="img/community.jpg" alt="restaurant building"/>
+                <img className="community" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/community.jpg?raw=true" alt="restaurant building"/>
                 <h2 className="community">COMMUNITY</h2>
                 <p className="community">Find food using our forum and collect extra inventory items from restaurants near you.</p>
                 <a href="/Post">
@@ -19,7 +19,7 @@ export default function Home(props) {
             </section>
 
             <section className="contribute">
-                <img className="contribute" src="img/contribute.jpg" alt="various food dishes on a table"/>
+                <img className="contribute" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/contribute.jpg?raw=true" alt="various food dishes on a table"/>
                 <h2 className="contribute">CONTRIBUTE</h2>
                 <p className="contribute"> Own a restaurant and want to contribute to reducing food waste? Join and post your remaining food inventory.</p>
                 <a href="/Form">
