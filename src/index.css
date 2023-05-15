@@ -81,6 +81,32 @@ img.contribute {
 
 /* #form */
 
+div.form-container {
+    background-color: #F5F3F3;
+}
+
+.formheader{
+    display: flex;
+}
+
+h1.post {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3E3C;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h4.post {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3E3C;
+    text-align: center;
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
 
 
 /* /* .navigator {
