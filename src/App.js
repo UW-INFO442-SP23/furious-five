@@ -14,7 +14,7 @@ export default function App(props) {
         <NavBar/>
         <Router>
           <Routes>
-          <Route path="*" element={<ViewPosts />} />
+          <Route path="*" element={<Home />} />
           <Route path="/Posts" element={<Posts />} />
           <Route path="/Form" element={<Form />} />
           <Route path="/Login" element={<Login />} />
