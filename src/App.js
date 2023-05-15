@@ -17,7 +17,7 @@ export default function App(props) {
           <Route path="*" element={<Home />} />
           <Route path="/Posts" element={<Posts />} />
           <Route path="/Form" element={<Form />} />
-          <Route path="/Login" element={<Login />} /> 
+          <Route path="/Login" element={<Login />} />
           </Routes>
         </Router> 
       </div>
