@@ -1,12 +1,12 @@
 import React from 'react';
 import { ReactDOM } from 'react';
 import { Link } from 'react-router-dom';
-import Filterform from './Filterform';
+import Filterforum from './Filterforum';
 // import Form from 'react-bootstrap/Form';
 // import App from './App';
 import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from "react-router-dom";
 
-export default function Form(props) {
+export default function Forum(props) {
   return (
     <div class="form-container">
 
@@ -27,9 +27,12 @@ export default function Form(props) {
     <div class="col-auto">
   <div class="input-group rounded">
     <form class="form-inline my-2 my-lg-0">
+      {/*
   <input type="search" class="form-control rounded mr-sm-2 col-20" 
           placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+          */}
   </form>
+  
 </div>
 </div>
 </div>
@@ -37,20 +40,18 @@ export default function Form(props) {
   <div class="col-auto ">
       <select class="form-select rounded mr-sm-2 col-8">
         <option selected>Date</option>
-        <option value="1">Saturday</option>
-        <option value="2">Sunday</option>
-        <option value="3">Monday</option>
-        <option value="4">Tuesday</option>
-        <option value="5">Wednesday</option>
-        <option value="6">Thursday</option>
-        <option value="7">Friday</option>
+        <option value="1">Today</option>
+        <option value="2">Yesterday</option>
+        <option value="3">2 days ago</option>
+        <option value="4">1 week ago</option>
       </select>
       </div>
       <div class="col-auto">
       <select class="form-select rounded mr-sm-2 col-8">
-        <option selected>Cuisine</option>
-        <option value="1">Indian cuisine</option>
-        <option value="2">Chinese cuisine</option>
+        <option selected>Order by</option>
+        <option value="1">A-Z</option>
+        <option value="2">Z-A</option>
+       {/*
         <option value="3">Italian cuisine</option>
         <option value="4">Thai cuisine</option>
         <option value="5">Japanese Cuisine</option>
@@ -60,6 +61,7 @@ export default function Form(props) {
         <option value="9">Turkey Cuisine</option>
         <option value="10">Lebanese Cuisine</option>
         <option value="11">American cuisine</option>
+       */}
       </select>
       </div>
       </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Filterform(props){
+export default function Filterforum(props){
 return(
 
  <div class="border-bottom m-2">

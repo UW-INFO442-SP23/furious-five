@@ -69,17 +69,19 @@ section.contribute {
 }
 
 img.community {
-    width: 1rem;
-    height: 1rem;
+    width: 20rem;
+    height: 15rem;
+    float: right;
 }
 
 img.contribute {
-    width: 1rem;
-    height: 1rem;
+    width: 20rem;
+    height: 15rem;
+    float: right;
 }
 
 
-/* #form */
+/*#form*/
 
 div.form-container {
     background-color: #F5F3F3;
@@ -117,4 +119,5 @@ h4.post {
     padding: 1.8rem;
     color: #3D3E3C;
 }
+
 
