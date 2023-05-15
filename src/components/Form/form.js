@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function Posts(props) {
+export default function Form(props) {
     
 }
