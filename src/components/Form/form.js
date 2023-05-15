@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from "r
 
 export default function Form(props) {
   return (
-    <div class="home-container">
+    <div class="form-container">
 
     <div className="formheader">
     <div className="container">
@@ -19,36 +19,56 @@ export default function Form(props) {
     </section>
     </div>
 
-    <div className="container">
-    <div class="align-items-start p-2">
-  <div class="my-3">
+    {/* <div className="container"> */}
+      {/* <div class="border-bottom m-2"> */}
+    <div class="row align-items-center my-3">
 
-  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="nav-search col-4">
+    <div class="col-auto">
   <div class="input-group rounded">
-  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-  <span class="input-group-text border-0" id="search-addon">
-    <i class="fas fa-search"></i>
-  </span>
+    <form class="form-inline my-2 my-lg-0">
+  <input type="search" class="form-control rounded mr-sm-2 col-20" 
+          placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  </form>
+</div>
+</div>
 </div>
 
-  <div class="col-auto">
-      <select class="form-select">
-        <option value>Date</option>
+  <div class="col-auto ">
+      <select class="form-select rounded mr-sm-2 col-8">
+        <option selected>Date</option>
+        <option value="1">Saturday</option>
+        <option value="2">Sunday</option>
+        <option value="3">Monday</option>
+        <option value="4">Tuesday</option>
+        <option value="5">Wednesday</option>
+        <option value="6">Thursday</option>
+        <option value="7">Friday</option>
       </select>
       </div>
       <div class="col-auto">
-      <select class="form-select">
-        <option value>Cuisine</option>
+      <select class="form-select rounded mr-sm-2 col-8">
+        <option selected>Cuisine</option>
+        <option value="1">Indian cuisine</option>
+        <option value="2">Chinese cuisine</option>
+        <option value="3">Italian cuisine</option>
+        <option value="4">Thai cuisine</option>
+        <option value="5">Japanese Cuisine</option>
+        <option value="6">French cuisine</option>
+        <option value="7">Mexican cuisine</option>
+        <option value="8">Greek cuisine</option>
+        <option value="9">Turkey Cuisine</option>
+        <option value="10">Lebanese Cuisine</option>
+        <option value="11">American cuisine</option>
       </select>
       </div>
-</nav>
+      </div>
+      {/* </div> */}
 
-</div>
-</div> 
 
 
     <div class="container">
-    <div class="row d-flex p-2">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="card-columns">
 
     <div class="card" style={{width: '18rem'}}>
@@ -129,7 +149,7 @@ export default function Form(props) {
     </div>
     </div>
     </div>
-    </div>
+    // </div>
 
     )
 
