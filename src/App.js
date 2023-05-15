@@ -7,6 +7,7 @@ import Login from './components/Login/login.js'
 import Posts from './components/Posts/posts.js'
 import ViewPosts from './components/Posts/viewposts.js'
 import Form from './components/Form/form.js';
+import Footer from './components/Footer/footer.js'
 
 export default function App(props) {
     return (
@@ -20,6 +21,7 @@ export default function App(props) {
           <Route path="/Login" element={<Login />} />
           </Routes>
         </Router> 
+        <Footer/>
       </div>
     );
   }
