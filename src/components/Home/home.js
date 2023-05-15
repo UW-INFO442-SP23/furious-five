@@ -11,7 +11,7 @@ export default function Home(props) {
             </section>
 
             <section className="community">
-                <img className="community" src="./components/img/community.jpg" alt="restaurant building"/>
+                <img className="community" src="../img/community.jpg" alt="restaurant building"/>
                 <h2 className="community">COMMUNITY</h2>
                 <p className="community">Find food using our forum and collect extra inventory items from restaurants near you.</p>
                 <button Link to="/Posts" className="button communitybtn">Forum</button>
