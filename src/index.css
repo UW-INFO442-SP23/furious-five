@@ -26,6 +26,12 @@ h2.contribute {
     color: #3D3E3C;
 }
 
+h2.video {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3E3C;
+    text-align: center;
+}
+
 p.about {
     font-family: Arial, Helvetica, sans-serif;
     color: #3D3E3C;
@@ -42,6 +48,11 @@ p.contribute {
     color: #3D3E3C;
 }
 
+p.video {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3E3C;
+    text-align: center;
+}
 
 section.about {
     padding: 5rem;
@@ -55,6 +66,12 @@ section.community {
 section.contribute {
     padding: 5rem;
 }
+
+section.video {
+    background-color: white;
+    padding: 5rem;
+}
+
 
 .communitybtn {
     padding: 0.8rem;
@@ -84,6 +101,9 @@ img.contribute {
     float: right;
 }
 
+iframe.video {
+    justify-content: center;
+}
 
 /*#form*/
 

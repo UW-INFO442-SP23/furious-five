@@ -27,6 +27,13 @@ export default function Home(props) {
                 </a>
             </section>
 
+            <section className="video">
+                <h2 className="video">LEARN MORE</h2>
+                <p className="video"> Watch this video to learn more about the imapct of food waste</p>
+                <iframe src="https://www.youtube.com/embed/ishA6kry8nc">
+                </iframe>
+            </section>
+
         </div>
     )
 }
