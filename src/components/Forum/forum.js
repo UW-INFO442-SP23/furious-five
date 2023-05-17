@@ -77,7 +77,8 @@ export default function Forum(props) {
       <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
         <p class="card-text">Description</p>
-        <a href="#" class="btn btn-light">View</a>
+        {/*<a href="Form/viewposts" class="btn btn-light">View</a>*/}
+        <Link to="../Form/viewposts" class="btn btn-light">View</Link>
       </div>
     </div>
 
@@ -85,7 +86,8 @@ export default function Forum(props) {
       <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
-        <a href="#" class="btn btn-light">View</a>
+        {/*<a href="#" class="btn btn-light">View</a>*/}
+        <Link to="../Form/viewposts" class="btn btn-light">View</Link>
       </div>
     </div>
 
@@ -93,7 +95,8 @@ export default function Forum(props) {
       <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
-        <a href="#" class="btn btn-light">View</a>
+        {/*<a href="#" class="btn btn-light">View</a>*/}
+        <Link to="../Form/viewposts" class="btn btn-light">View</Link>
       </div>
     </div>
 
@@ -101,7 +104,8 @@ export default function Forum(props) {
       <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
-        <a href="#" class="btn btn-light">View</a>
+        {/*<a href="#" class="btn btn-light">View</a>*/}
+        <Link to="../Form/viewposts" class="btn btn-light">View</Link>
       </div>
     </div>
     
@@ -109,7 +113,8 @@ export default function Forum(props) {
       <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
-        <a href="#" class="btn btn-light">View</a>
+        {/*<a href="#" class="btn btn-light">View</a>*/}
+        <Link to="../Form/viewposts" class="btn btn-light">View</Link>
       </div>
     </div>
 
@@ -117,7 +122,8 @@ export default function Forum(props) {
       <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
-        <a href="#" class="btn btn-light">View</a>
+        {/*<a href="#" class="btn btn-light">View</a>*/}
+        <Link to="../Form/viewposts" class="btn btn-light">View</Link>
       </div>
     </div>
 
@@ -125,7 +131,8 @@ export default function Forum(props) {
       <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
-        <a href="#" class="btn btn-light">View</a>
+        {/*<a href="#" class="btn btn-light">View</a>*/}
+        <Link to="../Form/viewposts" class="btn btn-light">View</Link>
       </div>
     </div>
 
@@ -133,7 +140,8 @@ export default function Forum(props) {
       <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
-        <a href="#" class="btn btn-light">View</a>
+        {/*<a href="#" class="btn btn-light">View</a>*/}
+        <Link to="../Form/viewposts" class="btn btn-light">View</Link>
       </div>
     </div>
 
@@ -141,7 +149,8 @@ export default function Forum(props) {
       <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
-        <a href="#" class="btn btn-light">View</a>
+        {/*<a href="#" class="btn btn-light">View</a>*/}
+        <Link to="../Form/viewposts" class="btn btn-light">View</Link>
       </div>
     </div>
 
