@@ -1,3 +1,7 @@
+body { 
+    background-color: #F5F3F3;
+}
+
 
 /* homepage styling */
 
@@ -122,3 +126,52 @@ h4.post {
 }
 
 
+/*From(Create a post)*/
+
+.create-post-container body {
+  background-color: #F5F3F3;
+  color: white;
+}
+
+
+.create-post-container form {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #3D3E3C;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
+.create-post-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.create-post-container input[type="text"],
+.create-post-container textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.create-post-container button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-post-container button:hover {
+  background-color: #666;
+}
