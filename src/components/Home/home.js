@@ -13,7 +13,7 @@ export default function Home(props) {
                 <img className="community" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/community.jpg?raw=true" alt="restaurant building"/>
                 <h2 className="community">COMMUNITY</h2>
                 <p className="community">Find food using our forum and collect extra inventory items from restaurants near you.</p>
-                <a href="/Post">
+                <a href="/Forum">
                     <button className="button communitybtn">Forum</button>
                 </a>
             </section>
