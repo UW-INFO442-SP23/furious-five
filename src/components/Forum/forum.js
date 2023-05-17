@@ -74,7 +74,7 @@ export default function Forum(props) {
     <div class="card-columns">
 
     <div class="card" style={{width: '18rem'}}>
-      <img class="card-img-top" src=".../100px200/" alt="PHOTO" />
+      <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
         <p class="card-text">Description</p>
         <a href="#" class="btn btn-light">View</a>
@@ -82,7 +82,7 @@ export default function Forum(props) {
     </div>
 
     <div class="card" style={{width: '18rem'}}>
-      <img class="card-img-top" src=".../100px200/" alt="PHOTO" />
+      <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
         <a href="#" class="btn btn-light">View</a>
@@ -90,7 +90,7 @@ export default function Forum(props) {
     </div>
 
     <div class="card" style={{width: '18rem'}}>
-      <img class="card-img-top" src=".../100px200/" alt="PHOTO" />
+      <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
         <a href="#" class="btn btn-light">View</a>
@@ -98,7 +98,7 @@ export default function Forum(props) {
     </div>
 
     <div class="card" style={{width: '18rem'}}>
-      <img class="card-img-top" src=".../100px200/" alt="PHOTO" />
+      <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
         <a href="#" class="btn btn-light">View</a>
@@ -106,7 +106,7 @@ export default function Forum(props) {
     </div>
     
     <div class="card" style={{width: '18rem'}}>
-      <img class="card-img-top" src=".../100px200/" alt="PHOTO" />
+      <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
         <a href="#" class="btn btn-light">View</a>
@@ -114,7 +114,7 @@ export default function Forum(props) {
     </div>
 
     <div class="card" style={{width: '18rem'}}>
-      <img class="card-img-top" src=".../100px200/" alt="PHOTO" />
+      <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
         <a href="#" class="btn btn-light">View</a>
@@ -122,7 +122,7 @@ export default function Forum(props) {
     </div>
 
     <div class="card" style={{width: '18rem'}}>
-      <img class="card-img-top" src=".../100px200/" alt="PHOTO" />
+      <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
         <a href="#" class="btn btn-light">View</a>
@@ -130,7 +130,7 @@ export default function Forum(props) {
     </div>
 
     <div class="card" style={{width: '18rem'}}>
-      <img class="card-img-top" src=".../100px200/" alt="PHOTO" />
+      <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
         <a href="#" class="btn btn-light">View</a>
@@ -138,7 +138,7 @@ export default function Forum(props) {
     </div>
 
     <div class="card" style={{width: '18rem'}}>
-      <img class="card-img-top" src=".../100px200/" alt="PHOTO" />
+      <img class="card-img-top" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true" alt="PHOTO" />
       <div class="card-body">
       <p class="card-text">Description</p>
         <a href="#" class="btn btn-light">View</a>
