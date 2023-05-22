@@ -1,4 +1,3 @@
-import { HOME_ROUTE, TRY_AGAIN_LATER_MSG } from "../constant/CommonConstants";
 
 import React, { useState } from "react";
 import styled from "styled-components"
