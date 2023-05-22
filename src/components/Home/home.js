@@ -28,10 +28,9 @@ export default function Home(props) {
             </section>
 
             <section className="video">
+                <iframe align="center" src="https://www.youtube.com/embed/ishA6kry8nc"></iframe>
                 <h2 className="video">LEARN MORE</h2>
                 <p className="video"> Watch this video to learn more about the imapct of food waste</p>
-                <iframe src="https://www.youtube.com/embed/ishA6kry8nc">
-                </iframe>
             </section>
 
         </div>

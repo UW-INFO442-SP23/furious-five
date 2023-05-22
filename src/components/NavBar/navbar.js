@@ -7,6 +7,9 @@ export default function NavBar(props) {
                 <a className="navigator" href="/Home">Home</a>
                 <a className="navigator" href="/Forum">Forum</a>
                 <a className="navigator" href="/Form">Create a post</a>
+                <a href="/Login">
+                    <button className="button loginbtn">Log In</button>
+                </a>
             </ul>
         </div>
     )

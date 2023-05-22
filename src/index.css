@@ -29,7 +29,6 @@ h2.contribute {
 h2.video {
     font-family: Arial, Helvetica, sans-serif;
     color: #3D3E3C;
-    text-align: center;
 }
 
 p.about {
@@ -51,7 +50,6 @@ p.contribute {
 p.video {
     font-family: Arial, Helvetica, sans-serif;
     color: #3D3E3C;
-    text-align: center;
 }
 
 section.about {
@@ -93,17 +91,23 @@ img.community {
     width: 20rem;
     height: 15rem;
     float: right;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
 }
 
 img.contribute {
     width: 20rem;
     height: 15rem;
     float: right;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
 }
 
-iframe.video {
-    justify-content: center;
+iframe {
+    float: right;
 }
+
+
 
 /*#form*/
 
@@ -143,6 +147,15 @@ h4.post {
     background-color: white;
     padding: 1.1rem;
     color: #3D3E3C;
+}
+
+.loginbtn {
+    padding: 0.5rem;
+    border-radius: 25px;
+    background-color: #3D3E3C;
+    color: white;
+    border-color: white;
+    float: right;
 }
 
 
