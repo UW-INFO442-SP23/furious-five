@@ -15,11 +15,10 @@ The published site can be viewed here: https://github.com/UW-INFO442-SP23/furiou
 
 ## Team
 
-- Bianca (Yu Wen) Su 
-- Fatima Dineh
-- Trang Tran
+- Bianca (Yu Wen) Su
 - Eivy Cedeno
+- Fatima Dineh
 - Mehr Mehta
-
+- Trang Tran
 
 
