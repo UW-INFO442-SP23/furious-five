@@ -1,31 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
-import { ArrowBack, ArrowForwardOutlined } from "@mui/icons-material";
-import { Button, IconButton } from "@mui/material";
-
-const CircledContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 25px;
-  width: 100%;
-  border: 3px solid gray;
-  margin-right: 1rem;
-`;
-
-const Text1 = styled.div`
-  font-size: 22px;
-  color: gray;
-  margin-left: auto;
-  margin-right: auto;
-`;
-
-const Text2 = styled.div`
-  font-size: 22px;
-  margin-left: auto;
-  margin-right: auto;
-`;
+import { useHistory } from "react-router-dom";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
@@ -35,7 +9,7 @@ const Login = (props) => {
   const [statusModalDescription, setStatusModalDescription] = useState("");
   const setIsLoggedIn = props.setIsLoggedIn;
   const setAccountInfo = props.setAccountInfo;
-  const navigate = useNavigate();
+  const history = useHistory();
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
@@ -49,7 +23,7 @@ const Login = (props) => {
     // if (!resp.status) {
     //   setIsLoggedIn(true);
     //   setAccountInfo(resp);
-    //   navigate(HOME_ROUTE);
+    //   history.push(HOME_ROUTE);
     // } else {
     //   setStatusModalTitle("Error Logging in");
     //   setStatusModalDescription(TRY_AGAIN_LATER_MSG);
@@ -63,14 +37,14 @@ const Login = (props) => {
 
   return (
     <div>
-      <CircledContainer className="p-3">
-        <IconButton
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", borderRadius: "25px", width: "100%", border: "3px solid gray", marginRight: "1rem" }} className="p-3">
+        <button
           className="bg-black p-1 align-self-start"
           aria-label="back"
           onClick={() => props.setDisplay("")}
         >
-          <ArrowBack htmlColor="#FFFFFF" />
-        </IconButton>
+          Back
+        </button>
         <h2 className="text-center" style={{ fontSize: "22px" }}>
           Sign In
         </h2>
@@ -109,10 +83,10 @@ const Login = (props) => {
               />
             </div>
           </div>
-          <Text1>Don't have an account?</Text1>
-          <Button onClick={handleCreateAccount}>Create Account</Button>
+          <div>Don't have an account?</div>
+          <button onClick={handleCreateAccount}>Create Account</button>
         </form>
-      </CircledContainer>
+      </div>
     </div>
   );
 };
