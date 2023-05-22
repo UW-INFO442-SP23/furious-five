@@ -3,7 +3,7 @@ import React from "react";
 function Form() {
   return (
     <div className="create-post-container">
-
+      <h2>Create A Post</h2>
       {/* Form */}
       <form>
         <label htmlFor="title">Restaurant Name:</label>
