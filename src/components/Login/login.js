@@ -1,6 +1,6 @@
 // import { HOME_ROUTE, TRY_AGAIN_LATER_MSG } from "constant/CommonConstants";
 // import React, {useState } from "react";
-// import Navbar from "./Navbar";
+// //import Navbar from "./Navbar";
 // import styled from "styled-components"
 // import { StatusModal } from "./StatusModal";
 // import { useNavigate } from "react-router-dom";
@@ -65,7 +65,7 @@
 //           <IconButton className="bg-black p-1 align-self-start" aria-label="back" onClick={() => props.setDisplay("")}>
 //             <ArrowBack htmlColor="#FFFFFF" />
 //           </IconButton>
-//           <h2 className="text-center" style={{fontSize: "22px"}}>Sign In</h2>
+//           <h2 className="text-center" style={{fontSize: "22px"}}>Sign In</h2> 
 //           {
 //             showStatus ?
 //             <StatusModal
