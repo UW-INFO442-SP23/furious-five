@@ -1,100 +1,104 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
-const Login = ({ setDisplay }) => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showStatus, setShowStatus] = useState(false);
-  const [statusModalTitle, setStatusModalTitle] = useState("");
-  const [statusModalDescription, setStatusModalDescription] = useState("");
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [display, setDisplay] = useState("login");
 
-  const handleOnSubmit = async (e) => {
-    e.preventDefault();
-
-    const params = {
-      email: email,
-      password: password,
-    };
-
-    // const resp = await loginAccount(params);
-    // if (!resp.status) {
-    //   setIsLoggedIn(true);
-    //   setAccountInfo(resp);
-    //   navigate(HOME_ROUTE);
-    // } else {
-    //   setStatusModalTitle("Error Logging in");
-    //   setStatusModalDescription(TRY_AGAIN_LATER_MSG);
-    //   setShowStatus(true);
-    // }
+  const handleLogin = () => {
+    try {
+      if (email === "test@example.com" && password === "password") {
+        setLoggedIn(true);
+      } else {
+        console.log("Invalid credentials");
+      }
+    } catch (error) {
+      console.log("Error logging in:", error);
+    }
   };
 
   const handleCreateAccount = () => {
     setDisplay("createAccount");
   };
 
+  const handleCreateAccountSubmit = () => {
+    try {
+      console.log("Account created successfully");
+      setDisplay("login");
+    } catch (error) {
+      console.log("Error creating account:", error);
+    }
+  };
+
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          borderRadius: "25px",
-          width: "100%",
-          border: "3px solid gray",
-          marginRight: "1rem",
-        }}
-        className="p-3"
-      >
-        <button
-          className="bg-black p-1 align-self-start"
-          aria-label="back"
-          onClick={() => setDisplay("")}
-        >
-          Back
-        </button>
-        <h2 className="text-center" style={{ fontSize: "22px" }}>
-          Sign In
-        </h2>
-        {/* showStatus ?
-          <StatusModal
-            title={statusModalTitle}
-            description={statusModalDescription}
-            open={showStatus}
-            handleClose={() => setShowStatus(false)}
-          /> :
-          "" */}
-        <form onSubmit={handleOnSubmit} className="d-flex flex-column">
-          <div className="form align-items-center">
-            <div className="form-group col-md-4">
-              <label htmlFor="exampleInputEmail1">Email *</label>
+      {display === "login" && (
+        <div>
+          <h2>Login</h2>
+          <form onSubmit={handleLogin}>
+            <div>
+              <label>Email:</label>
               <input
                 type="email"
-                className="form-control"
-                onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="form-group col-md-4">
-              <label htmlFor="exampleInputPassword1">Password *</label>
+            <div>
+              <label>Password:</label>
               <input
                 type="password"
-                className="form-control"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                id="exampleInputPassword1"
-                aria-describedby="passwordHelp"
-                placeholder="Enter Password"
               />
             </div>
-          </div>
-          <div>Don't have an account?</div>
-          <button onClick={handleCreateAccount}>Create Account</button>
-        </form>
-      </div>
+            <div>
+              <button type="submit">Login</button>
+            </div>
+            <div>
+              Don't have an account?{" "}
+              <span role="button" onClick={handleCreateAccount}>
+                Create Account
+              </span>
+            </div>
+          </form>
+        </div>
+      )}
+
+      {display === "createAccount" && (
+        <div>
+          <h2>Create Account</h2>
+          <form onSubmit={handleCreateAccountSubmit}>
+            <div>
+              <label>Email:</label>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div>
+              <label>Password:</label>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div>
+              <button type="submit">Create Account</button>
+            </div>
+            <div>
+              <span role="button" onClick={() => setDisplay("login")}>
+                Back to Login
+              </span>
+            </div>
+          </form>
+        </div>
+      )}
+
+      {loggedIn && <div>Welcome, {email}!</div>}
     </div>
   );
 };
