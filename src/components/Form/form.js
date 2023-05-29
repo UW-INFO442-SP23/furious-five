@@ -12,7 +12,9 @@ function Form() {
         <input type="text" id="email" name="email" required />
         <label htmlFor="address">Address:</label>
         <input type="text" id="address" name="address" required />
-        <label htmlFor="content">Cuisine:</label>
+        <label htmlFor="address">Cuisine:</label>
+        <input type="text" id="address" name="address" required />
+        <label htmlFor="content">Description:</label>
         <textarea id="content" name="content" rows="10" required></textarea>
 
         <label htmlFor="menu">Menu:</label>
