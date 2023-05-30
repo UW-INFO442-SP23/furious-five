@@ -242,8 +242,13 @@ h4.post {
 .card-columns {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1.5rem;
+}
+
+.input-group input[type="search"] {
+  width: 500px;
+  max-width: 100%;
 }
 
 .card {
@@ -252,6 +257,17 @@ h4.post {
 
 @media (max-width: 576px) {
   .card {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  
+  .filter-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .input-group input[type="search"] {
     width: 100%;
   }
 }
+

@@ -87,7 +87,7 @@ export default function Forum(props) {
                 <input
                   type="search"
                   className="form-control rounded mr-sm-2 col-20"
-                  placeholder="Search"
+                  placeholder="Search restaurant"
                   aria-label="Search"
                   aria-describedby="search-addon"
                   onChange={handleSearch}
