@@ -6,9 +6,9 @@ export default function Footer(props) {
             <div className="row" style={{paddingTop: "20px"}}>
                 <div style={{paddingLeft: "40px", color: "white"}}>
                     <h5>Contact Us</h5>
-                    <span>Email</span>
+                    <span>Email: support@foodlink</span>
                     <br></br>
-                    <span>Phone</span>
+                    <span>Phone: (206) 123-4567</span>
                     <p>&copy; FoodLink 2023</p>
                 </div>
             </div>

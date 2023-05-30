@@ -19,16 +19,19 @@ h1.about {
 h2.community {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    text-align: left;
 }
 
 h2.contribute {
     font-family: Arial, Helvetica, sans-serif;
     color: #3D3E3C;
+    text-align: left;
 }
 
 h2.video {
     font-family: Arial, Helvetica, sans-serif;
     color: #3D3E3C;
+    text-align: left;
 }
 
 p.about {
@@ -214,3 +217,131 @@ h4.post {
     margin-top: 20px;
     font-size: 50px;
 }
+
+/*forum*/
+
+.form-container {
+  margin-top: 2rem;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.input-group input[type="search"] {
+  width: 500px;
+  max-width: 100%;
+}
+
+.card {
+  width: 18rem;
+}
+
+@media (max-width: 576px) {
+  .card {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  
+  .filter-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .input-group input[type="search"] {
+    width: 100%;
+  }
+}
+
+/*login*/
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 500px;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.create-account-link,
+.back-to-login-link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.create-account-link:hover,
+.back-to-login-link:hover {
+  color: #0056b3;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-top: 2rem;
+}
+
