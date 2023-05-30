@@ -32,73 +32,91 @@ const Login = () => {
   };
 
   return (
-    <div>
-      {display === "login" && (
-        <div>
-          <h2>Login</h2>
-          <form onSubmit={handleLogin}>
-            <div>
-              <label>Email:</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div>
-              <label>Password:</label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-            <div>
-              <button type="submit">Login</button>
-            </div>
-            <div>
-              Don't have an account?{" "}
-              <span role="button" onClick={handleCreateAccount}>
-                Create Account
-              </span>
-            </div>
-          </form>
-        </div>
-      )}
+    <div className="login-container">
+      <div className="login-form">
+        {display === "login" && (
+          <div>
+            <h2>Login</h2>
+            <form onSubmit={handleLogin}>
+              <div className="form-group">
+                <label>Email:</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                <label>Password:</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                <button type="submit" className="btn btn-primary">
+                  Login
+                </button>
+              </div>
+              <div className="form-group">
+                Don't have an account?{" "}
+                <span
+                  role="button"
+                  className="create-account-link"
+                  onClick={handleCreateAccount}
+                >
+                  Create Account
+                </span>
+              </div>
+            </form>
+          </div>
+        )}
 
-      {display === "createAccount" && (
-        <div>
-          <h2>Create Account</h2>
-          <form onSubmit={handleCreateAccountSubmit}>
-            <div>
-              <label>Email:</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div>
-              <label>Password:</label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-            <div>
-              <button type="submit">Create Account</button>
-            </div>
-            <div>
-              <span role="button" onClick={() => setDisplay("login")}>
-                Back to Login
-              </span>
-            </div>
-          </form>
-        </div>
-      )}
+        {display === "createAccount" && (
+          <div>
+            <h2>Create Account</h2>
+            <form onSubmit={handleCreateAccountSubmit}>
+              <div className="form-group">
+                <label>Email:</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                <label>Password:</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                <button type="submit" className="btn btn-primary">
+                  Create Account
+                </button>
+              </div>
+              <div className="form-group">
+                <span
+                  role="button"
+                  className="back-to-login-link"
+                  onClick={() => setDisplay("login")}
+                >
+                  Back to Login
+                </span>
+              </div>
+            </form>
+          </div>
+        )}
 
-      {loggedIn && <div>Welcome, {email}!</div>}
+        {loggedIn && <div className="welcome-message">Welcome, {email}!</div>}
+      </div>
     </div>
   );
 };
