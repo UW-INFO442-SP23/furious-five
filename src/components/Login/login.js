@@ -80,6 +80,24 @@ const Login = () => {
             <h2>Create Account</h2>
             <form onSubmit={handleCreateAccountSubmit}>
               <div className="form-group">
+                <label>First Name:</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                <label>Last Name:</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              <div className="form-group">
                 <label>Email:</label>
                 <input
                   type="email"
@@ -90,6 +108,24 @@ const Login = () => {
               </div>
               <div className="form-group">
                 <label>Password:</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                <label>Restaurant:</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                <label>Restaurant contact:</label>
                 <input
                   type="password"
                   className="form-control"
