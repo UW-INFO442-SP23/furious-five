@@ -214,3 +214,44 @@ h4.post {
     margin-top: 20px;
     font-size: 50px;
 }
+
+/*forum*/
+
+.form-container {
+  margin-top: 2rem;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  width: 18rem;
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+}

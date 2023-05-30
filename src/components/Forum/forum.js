@@ -18,6 +18,22 @@ const restaurants = [
     description: "fake description",
     date: "Yesterday",
   },
+  {
+    name: "wendys",
+    email: "",
+    address: "",
+    cuisine: "fast food",
+    description: "fake description",
+    date: "Today",
+  },
+  {
+    name: "Burger King",
+    email: "",
+    address: "",
+    cuisine: "Thai cuisine",
+    description: "fake description",
+    date: "Yesterday",
+  },
   // Rest of the restaurant data...
 ];
 
@@ -59,17 +75,13 @@ export default function Forum(props) {
 
   return (
     <div className="form-container">
-      <div className="formheader">
-        {/* Rest of the header code... */}
-        <div className="container">
-    <div class="p-2">
-    <section className="post">
-    <h1 className="post">Post Forum</h1>
-    <h4 className="post">Come and view what food restaraunts are giving away! </h4>
-    </section>
-    </div>
-        <div className="row align-items-center my-3">
-          <div className="nav-search col-4">
+      <div className="form-header">
+        <div className="title-container">
+          <h1>Post Forum</h1>
+          <h4>Come and view what food restaurants are giving away!</h4>
+        </div>
+        <div className="filter-container">
+          <div className="nav-search">
             <div className="col-auto">
               <div className="input-group rounded">
                 <input
@@ -83,8 +95,6 @@ export default function Forum(props) {
               </div>
             </div>
           </div>
-        </div>
-
           <div className="col-auto">
             <select
               className="form-select rounded mr-sm-2 col-10"
@@ -98,7 +108,6 @@ export default function Forum(props) {
               <option value="1 week ago">1 week ago</option>
             </select>
           </div>
-
           <div className="col-auto">
             <select
               className="form-select rounded mr-sm-2 col-10"
@@ -118,32 +127,31 @@ export default function Forum(props) {
             </select>
           </div>
         </div>
-
-        <div className="container">
-          <div className="row row-cols-1 row-cols-md-3 g-4">
-            <div className="card-columns">
-              {filteredRestaurants.map((restaurant) => (
-                <div
-                  className="card"
-                  style={{ width: "18rem" }}
-                  key={restaurant.name}
-                >
-                  <img
-                    className="card-img-top"
-                    src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true"
-                    alt="PHOTO"
-                  />
-                  <div className="card-body">
-                    <p className="card-text">{restaurant.name}</p>
-                    <p className="card-text">{restaurant.description}</p>
-                    <p className="card-text">{restaurant.cuisine}</p>
-                    <Link to="../Form/viewposts" className="btn btn-light">
-                      View
-                    </Link>
-                  </div>
+      </div>
+      <div className="container">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="card-columns">
+            {filteredRestaurants.map((restaurant) => (
+              <div
+                className="card"
+                style={{ width: "18rem" }}
+                key={restaurant.name}
+              >
+                <img
+                  className="card-img-top"
+                  src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true"
+                  alt="PHOTO"
+                />
+                <div className="card-body">
+                  <p className="card-text">{restaurant.name}</p>
+                  <p className="card-text">{restaurant.description}</p>
+                  <p className="card-text">{restaurant.cuisine}</p>
+                  <Link to="../Form/viewposts" className="btn btn-light">
+                    View
+                  </Link>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
