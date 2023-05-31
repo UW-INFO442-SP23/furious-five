@@ -622,4 +622,8 @@ h4.post {
     width: 20rem;
     height: 15rem;
   }
+
+.container-fluid {
+  text-align: left;
+}
 }
