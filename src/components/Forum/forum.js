@@ -1,15 +1,54 @@
 import React, { useState } from "react";
 
+
+function PostsCard(props) {
+
+  const handleClick = function(event) {
+    alert("This restarant has been notifed of your request. Please check your email for further details!")
+  };
+
+  let restaurant = props.posts;
+
+  return (
+    <div
+    className="card"
+    style={{ width: "18rem" }}
+    key={restaurant.name}
+  >
+    <img
+      className="card-img-top"
+      src={restaurant.img}
+      alt="Inventory"
+    />
+    <div className="card-body">
+      <p className="card-text">{restaurant.name}</p>
+      <p className="card-text">{restaurant.description}</p>
+      <p className="card-text">{restaurant.cuisine}</p>
+      <p className="card-text">{restaurant.email}</p>
+      <p className="card-text">{restaurant.address}</p>
+      <button onClick={handleClick} className="btn btn-light">
+          Send Request
+      </button>
+    </div>
+  </div>
+  );
+}
+
 export default function Forum(props) {
+
+  let list = props.posts.map((post) =>
+    <PostsCard posts={post}  key={post.name}/>
+  );
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [date, setDate] = useState("");
   const [address, setAddress] = useState("");
   const [cuisine, setCuisine] = useState("");
   const [description, setDescription] = useState("");
   const [img, setImg] = useState("");
 
-  const [restaurants, setRestaurants] = useState(props.posts);
+  const [restaurants, setRestaurants] = useState(list);
 
 
   const changeName = (event) => {
@@ -41,65 +80,64 @@ export default function Forum(props) {
     setImg(URL.createObjectURL(imgFile));
   }
 
-
-  const addPost = () => {
-    const newPost = {
-      name: name,
-      email: email,
-      address: address,
-      cuisine: cuisine,
-      description: description,
-      img: img,
-      date: date
-    }
-
-    const newRestaurants = [newPost, ...restaurants];
-    setRestaurants(newRestaurants);
+  function UpdateCards() {
+    let newList = props.posts.map((post) =>
+    <PostsCard posts={post}  key={post.name}/>
+  );
+    return newList
   }
 
+  
   function handleSubmit(event) {
     event.preventDefault();
-    addPost();
+    const formInfo = {
+        name,
+        email,
+        address,
+        cuisine,
+        description,
+        date,
+        img
+    }
+    props.posts.push(formInfo);
+    setRestaurants(<UpdateCards/>);
   };
 
-  const [filteredRestaurants, setFilteredRestaurants] = useState(restaurants);
-  const [date, setDate] = useState("");
-  const [cuisineFilter, setCuisineFilter] = useState("");
-  const [searchQuery, setSearchQuery] = useState("");
+  // const [filteredRestaurants, setFilteredRestaurants] = useState(restaurants);
+  // const [date, setDate] = useState("");
+  // const [cuisineFilter, setCuisineFilter] = useState("");
+  // const [searchQuery, setSearchQuery] = useState("");
 
-  const handleSearch = (e) => {
-    setSearchQuery(e.target.value.toLowerCase());
-    filterRestaurants(e.target.value.toLowerCase(), date, cuisineFilter);
-  };
+  // const handleSearch = (e) => {
+  //   setSearchQuery(e.target.value.toLowerCase());
+  //   filterRestaurants(e.target.value.toLowerCase(), date, cuisineFilter);
+  // };
 
-  const filterRestaurants = (query, selectedDate, selectedCuisine) => {
-    const filtered = restaurants.filter((restaurant) => {
-      const nameMatch = restaurant.name.toLowerCase().includes(query);
-      const dateMatch = !selectedDate || restaurant.date === selectedDate;
-      const cuisineMatch =
-        !selectedCuisine || restaurant.cuisine === selectedCuisine;
+  // const filterRestaurants = (query, selectedDate, selectedCuisine) => {
+  //   const filtered = restaurants.filter((restaurant) => {
+  //     const nameMatch = restaurant.name.toLowerCase().includes(query);
+  //     const dateMatch = !selectedDate || restaurant.date === selectedDate;
+  //     const cuisineMatch =
+  //       !selectedCuisine || restaurant.cuisine === selectedCuisine;
 
-      return nameMatch && dateMatch && cuisineMatch;
-    });
+  //     return nameMatch && dateMatch && cuisineMatch;
+  //   });
 
-    setFilteredRestaurants(filtered);
-  };
+  //   setRestaurants(filtered);
+  // };
 
-  const handleDateChange = (e) => {
-    const selectedDate = e.target.value;
-    setDate(selectedDate);
-    filterRestaurants(searchQuery, selectedDate, cuisineFilter);
-  };
+  // const handleDateChange = (e) => {
+  //   const selectedDate = e.target.value;
+  //   setDate(selectedDate);
+  //   filterRestaurants(searchQuery, selectedDate, cuisineFilter);
+  // };
 
-  const handleCuisineChange = (e) => {
-    const selectedCuisine = e.target.value;
-    setCuisineFilter(selectedCuisine);
-    filterRestaurants(searchQuery, date, selectedCuisine);
-  };
+  // const handleCuisineChange = (e) => {
+  //   const selectedCuisine = e.target.value;
+  //   setCuisineFilter(selectedCuisine);
+  //   filterRestaurants(searchQuery, date, selectedCuisine);
+  // };
 
-const handleClick = function(event) {
-    alert("This restarant has been notifed of your request. Please check your email for further details!")
-};
 
   return (
     <div className="form-container">
@@ -108,7 +146,7 @@ const handleClick = function(event) {
           <p className="forum">Explore the forum and create posts.</p>
          </section>
     
-      <div className="form-header">
+      {/* <div className="form-header">
         <div className="title-container">
           <h1>Post Forum</h1>
           <h4>Come and view what food restaurants are giving away!</h4>
@@ -163,33 +201,16 @@ const handleClick = function(event) {
       </div>
       <div className="container">
         <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="card-columns"> */}
+
+      <div className="container">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
           <div className="card-columns">
-            {filteredRestaurants.map((restaurant) => (
-              <div
-                className="card"
-                style={{ width: "18rem" }}
-                key={restaurant.name}
-              >
-                <img
-                  className="card-img-top"
-                  src={restaurant.img}
-                  alt="inventory"
-                />
-                <div className="card-body">
-                  <p className="card-text">{restaurant.name}</p>
-                  <p className="card-text">{restaurant.description}</p>
-                  <p className="card-text">{restaurant.cuisine}</p>
-                  <p className="card-text">{restaurant.email}</p>
-                  <p className="card-text">{restaurant.address}</p>
-                  <button onClick={handleClick} className="btn btn-light">
-                    Send Request
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+            {restaurants}     
+         </div>
         </div>
       </div>
+      
       <div className="create-post-container">
       <h2>Create A Post</h2>
       {/* Form */}
