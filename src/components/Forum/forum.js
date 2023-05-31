@@ -210,14 +210,14 @@ export default function Forum(props) {
          </div>
         </div>
       </div>
-      
+
       <div className="create-post-container">
       <h2>Create A Post</h2>
       {/* Form */}
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Restaurant Name:</label>
         <input type="text" id="title" name="title" required onChange={changeName}/>
-        <label htmlFor="address">Food Date (Today, Yesterday, 2 days ago, 1 week ago):</label>
+        <label htmlFor="address">Food Date (MM/DD/YYYY:</label>
         <input type="text" id="address" name="address" required onChange={changeDate}/>
         <label htmlFor="email">Email Address:</label>
         <input type="text" id="email" name="email" required onChange={changeEmail}/>
