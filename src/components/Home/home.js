@@ -32,7 +32,7 @@ export default function Home(props) {
                 <h2 className="video">LEARN MORE</h2>
                 <p className="video"> Watch this video to learn more about the impact of food waste.</p>
                 <p>Have questions about food regulations?
-                <a href="https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements"> Click here to learn about FDA regulations</a></p> 
+                <a href="https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements"> See FDA regulations</a></p> 
             </section>
 
         </div>
