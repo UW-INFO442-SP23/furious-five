@@ -11,9 +11,9 @@ import Footer from './components/Footer/footer.js'
 
 export default function App(props) {
 
-  let postCards = [{name: "Poke Place", email: "contact@pokeplace.com",address: "123 2th Ave S Seattle, WA", 
-  cuisine: "Japanese cuisine", description: "fake description", img: "https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true", date: "Today"}, {name: "Poke Place", email: "contact@pokeplace.com",address: "123 2th Ave S Seattle, WA", 
-  cuisine: "Japanese cuisine", description: "fake description", img: "https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true", date: "Yesterday"}]
+  let postCards = [{name: "Example Restaurant", email: "contact@example.com",address: "123 4th Ave N, Shoreline, WA 98155", 
+  cuisine: "Japanese cuisine", description: "Your inventory description", img: "https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true", date: "Today"}]
+
 
     return (
       <div>

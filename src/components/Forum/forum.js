@@ -191,13 +191,13 @@ const handleClick = function(event) {
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Restaurant Name:</label>
         <input type="text" id="title" name="title" required onChange={changeName}/>
-        <label htmlFor="address">Date (MM/DD/YYYY):</label>
+        <label htmlFor="address">Food Date (Today, Yesterday, 2 days ago, 1 week ago):</label>
         <input type="text" id="address" name="address" required onChange={changeDate}/>
         <label htmlFor="email">Email Address:</label>
         <input type="text" id="email" name="email" required onChange={changeEmail}/>
         <label htmlFor="address">Address:</label>
         <input type="text" id="address" name="address" required onChange={changeAddress}/>
-        <label htmlFor="address">Cuisine:</label>
+        <label htmlFor="address">Cuisine (example: Japanese cuisine):</label>
         <input type="text" id="address" name="address" required onChange={changeCuisine}/>
         <label htmlFor="content">Description:</label>
         <textarea id="content" name="content" rows="10" required onChange={changeDescription}></textarea>
