@@ -2,27 +2,25 @@
 
 Acceptance Testing Process:
 
-- Input correct information into the form and verify successful posting
-- Input incorrect or incomplete information into the form and verify unsuccessful posting
+- Input information into the form and verify successful posting
 - Verify that the food inventory database is updated correctly with the new posting information
 
 Successful Test Result:
 
-User is able to post successfully with correct information or an error 
-message will be given to the user if required fields on the post are incomplete and the post 
+User is able to post successfully or an error 
+message will be given to the user if required fields on the post are empty and the post 
 cannot be submitted. Also, the food inventory database is updated correctly with the new posting information.
 
-2. Filtering
+
+
+2. Contacting Button
 
 Acceptance Testing Process:
-
-- Select cuisine type using filter menu on the community page.
-- Select date using filter menu on the community page.
+-Click on "Send Request" button on the forum card.
 
 Successful Test Result:
+- Notified that your request has been sent through a pop up.
 
-- Filters posts by cuisine types correctly.
-- Filters posts by dates correctly.
 
 
 3. Links and media
