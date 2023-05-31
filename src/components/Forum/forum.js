@@ -202,8 +202,11 @@ export default function Forum(props) {
       <div className="container">
         <div className="row row-cols-1 row-cols-md-3 g-4">
           <div className="card-columns"> */}
-
-      <div className="container">
+        <div className="title-container">
+          <h1>Post Forum</h1>
+          <h4>Come and view what food restaurants are giving away!</h4>
+        </div>
+        <div className="container">
         <div className="row row-cols-1 row-cols-md-3 g-4">
           <div className="card-columns">
             {restaurants}     
