@@ -6,6 +6,11 @@ const Login = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [display, setDisplay] = useState("login");
 
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [restaurant, setRestaurant] = useState("");
+  const [restaurantContact, setRestaurantContact] = useState("");
+
   const handleLogin = () => {
     try {
       if (email === "test@example.com" && password === "password") {
@@ -82,19 +87,19 @@ const Login = () => {
               <div className="form-group">
                 <label>First Name:</label>
                 <input
-                  type="password"
+                  type="text"
                   className="form-control"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
                 />
               </div>
               <div className="form-group">
                 <label>Last Name:</label>
                 <input
-                  type="password"
+                  type="text"
                   className="form-control"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
                 />
               </div>
               <div className="form-group">
@@ -118,19 +123,19 @@ const Login = () => {
               <div className="form-group">
                 <label>Restaurant:</label>
                 <input
-                  type="password"
+                  type="text"
                   className="form-control"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  value={restaurant}
+                  onChange={(e) => setRestaurant(e.target.value)}
                 />
               </div>
               <div className="form-group">
                 <label>Restaurant contact:</label>
                 <input
-                  type="password"
+                  type="text"
                   className="form-control"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  value={restaurantContact}
+                  onChange={(e) => setRestaurantContact(e.target.value)}
                 />
               </div>
               <div className="form-group">
