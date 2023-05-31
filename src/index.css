@@ -74,6 +74,7 @@ label {
 
 /* Homepage Styling */
 
+/* Homepage Styling */
 div.home-container {
   background-color: #F5F3F3;
 }
@@ -90,6 +91,8 @@ h1.forum {
   color: white;
   text-align: center;
   font-size: 5rem;
+  display: flex;
+  justify-content: center;
 }
 
 h2.community {
@@ -161,6 +164,11 @@ section.video {
   padding: 5rem;
 }
 
+.community-container {
+  overflow: auto;
+  max-height: 100%;
+}
+
 .communitybtn {
   padding: 0.8rem;
   border-radius: 25px;
@@ -196,6 +204,7 @@ img.contribute {
 iframe {
   float: right;
 }
+
 
 /* Form */
 
