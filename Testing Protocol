@@ -1,0 +1,36 @@
+1. Posting Form Feature
+
+Acceptance Testing Process:
+
+- Input correct information into the form and verify successful posting
+- Input incorrect or incomplete information into the form and verify unsuccessful posting
+- Verify that the food inventory database is updated correctly with the new posting information
+
+Successful Test Result:
+
+User is able to post successfully with correct information or an error 
+message will be given to the user if required fields on the post are incomplete and the post 
+cannot be submitted. Also, the food inventory database is updated correctly with the new posting information.
+
+2. Filtering
+
+Acceptance Testing Process:
+
+- Select cuisine type using filter menu on the community page.
+- Select date using filter menu on the community page.
+
+Successful Test Result:
+
+- Filters posts by cuisine types correctly.
+- Filters posts by dates correctly.
+
+
+3. Links and media
+
+Acceptance Testing Process:
+
+- Clicking on video and FDA regulations website link.
+
+Successful Test Result:
+- Able to watch video on homepage.
+- Able to redirect to website with FDA regulations.
