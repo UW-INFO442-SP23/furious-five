@@ -436,10 +436,11 @@ h4.post {
   }
 }
 
-.row {
-    display: flex;
-    justify-content: space-around;
+.form-container forum {
+  display: flex;
+  justify-content: space-around;
 }
+
 /* Media Queries */
 
 @media (max-width: 320px) {
@@ -623,7 +624,4 @@ h4.post {
     height: 15rem;
   }
 
-.container-fluid {
-  text-align: left;
-}
 }
