@@ -1,43 +1,67 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
-const restaurants = [
-  {
-    name: "chick fill a",
-    email: "",
-    address: "",
-    cuisine: "Italian cuisine",
-    description: "fake description",
-    date: "Today",
-  },
-  {
-    name: "McDonald",
-    email: "",
-    address: "",
-    cuisine: "Thai cuisine",
-    description: "fake description",
-    date: "Yesterday",
-  },
-  {
-    name: "wendys",
-    email: "",
-    address: "",
-    cuisine: "fast food",
-    description: "fake description",
-    date: "Today",
-  },
-  {
-    name: "Burger King",
-    email: "",
-    address: "",
-    cuisine: "Thai cuisine",
-    description: "fake description",
-    date: "Yesterday",
-  },
-  // Rest of the restaurant data...
-];
 
 export default function Forum(props) {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [cuisine, setCuisine] = useState("");
+  const [description, setDescription] = useState("");
+  const [img, setImg] = useState("");
+
+  const [restaurants, setRestaurants] = useState(props.posts);
+
+
+  const changeName = (event) => {
+    setName(event.target.value);
+  }
+
+  const changeEmail = (event) => {
+    setEmail(event.target.value);
+  }
+
+  const changeAddress = (event) => {
+    setAddress(event.target.value);
+  }
+
+  const changeCuisine = (event) => {
+    setCuisine(event.target.value);
+  }
+
+  const changeDescription = (event) => {
+    setDescription(event.target.value);
+  }
+
+  const changeDate = (event) => {
+    setDate(event.target.value);
+  }
+
+  const changeImage = (event) => {
+    const imgFile = event.target.files[0];
+    setImg(URL.createObjectURL(imgFile));
+  }
+
+
+  const addPost = () => {
+    const newPost = {
+      name: name,
+      email: email,
+      address: address,
+      cuisine: cuisine,
+      description: description,
+      img: img,
+      date: date
+    }
+
+    const newRestaurants = [newPost, ...restaurants];
+    setRestaurants(newRestaurants);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    addPost();
+  };
+
   const [filteredRestaurants, setFilteredRestaurants] = useState(restaurants);
   const [date, setDate] = useState("");
   const [cuisineFilter, setCuisineFilter] = useState("");
@@ -72,6 +96,10 @@ export default function Forum(props) {
     setCuisineFilter(selectedCuisine);
     filterRestaurants(searchQuery, date, selectedCuisine);
   };
+
+const handleClick = function(event) {
+    alert("This restarant has been notifed of your request. Please check your email for further details!")
+};
 
   return (
     <div className="form-container">
@@ -139,22 +167,48 @@ export default function Forum(props) {
               >
                 <img
                   className="card-img-top"
-                  src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true"
-                  alt="PHOTO"
+                  src={restaurant.img}
+                  alt="inventory"
                 />
                 <div className="card-body">
                   <p className="card-text">{restaurant.name}</p>
                   <p className="card-text">{restaurant.description}</p>
                   <p className="card-text">{restaurant.cuisine}</p>
-                  <Link to="../Form/viewposts" className="btn btn-light">
-                    View
-                  </Link>
+                  <p className="card-text">{restaurant.email}</p>
+                  <p className="card-text">{restaurant.address}</p>
+                  <button onClick={handleClick} className="btn btn-light">
+                    Send Request
+                  </button>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
+      <div className="create-post-container">
+      <h2>Create A Post</h2>
+      {/* Form */}
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="title">Restaurant Name:</label>
+        <input type="text" id="title" name="title" required onChange={changeName}/>
+        <label htmlFor="address">Date (MM/DD/YYYY):</label>
+        <input type="text" id="address" name="address" required onChange={changeDate}/>
+        <label htmlFor="email">Email Address:</label>
+        <input type="text" id="email" name="email" required onChange={changeEmail}/>
+        <label htmlFor="address">Address:</label>
+        <input type="text" id="address" name="address" required onChange={changeAddress}/>
+        <label htmlFor="address">Cuisine:</label>
+        <input type="text" id="address" name="address" required onChange={changeCuisine}/>
+        <label htmlFor="content">Description:</label>
+        <textarea id="content" name="content" rows="10" required onChange={changeDescription}></textarea>
+
+        <label htmlFor="menu">Menu:</label>
+        <input type="file" id="menu" name="menu" onChange={changeImage}/>
+
+        <button type="submit">Post</button>
+      </form>
+
+    </div>
     </div>
   );
 }

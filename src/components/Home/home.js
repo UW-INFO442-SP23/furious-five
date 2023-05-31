@@ -22,7 +22,7 @@ export default function Home(props) {
                 <img className="contribute" src="https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/contribute.jpg?raw=true" alt="various food dishes on a table"/>
                 <h2 className="contribute">CONTRIBUTE</h2>
                 <p className="contribute"> Own a restaurant and want to contribute to reducing food waste? Join and post your remaining food inventory.</p>
-                <a href="/Form">
+                <a href="/Forum">
                     <button className="button contributebtn">Create a post</button>
                 </a>
             </section>

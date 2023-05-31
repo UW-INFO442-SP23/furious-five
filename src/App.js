@@ -10,14 +10,19 @@ import Form from './components/Form/form.js';
 import Footer from './components/Footer/footer.js'
 
 export default function App(props) {
+
+  let postCards = [{name: "Poke Place", email: "contact@pokeplace.com",address: "123 2th Ave S Seattle, WA", 
+  cuisine: "Japanese cuisine", description: "fake description", img: "https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true", date: "Today"}, {name: "Poke Place", email: "contact@pokeplace.com",address: "123 2th Ave S Seattle, WA", 
+  cuisine: "Japanese cuisine", description: "fake description", img: "https://github.com/UW-INFO442-SP23/furious-five/blob/main/img/chick.jpg?raw=true", date: "Yesterday"}]
+
     return (
       <div>
         <NavBar/>
         <Router>
           <Routes>
           <Route path="*" element={<Home />} />
-          <Route path="/Forum" element={<Forum />} />
-          <Route path="/Form" element={<Form />} />
+          <Route path="/Forum" element={<Forum posts={postCards}/>} />
+          {/* <Route path="/Form" element={<Form posts={postCards}/>} /> */}
           <Route path="/Form/viewposts" element={<ViewPosts />}/>
           <Route path="/Login" element={<Login />} />
           </Routes>
