@@ -11,6 +11,8 @@ User is able to post successfully or an error
 message will be given to the user if required fields on the post are empty and the post 
 cannot be submitted. Also, the food inventory database is updated correctly with the new posting information.
 
+
+
 2. Contacting Button
 
 Acceptance Testing Process:
@@ -18,6 +20,7 @@ Acceptance Testing Process:
 
 Successful Test Result:
 - Notified that your request has been sent through a pop up.
+
 
 
 3. Links and media
