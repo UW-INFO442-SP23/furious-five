@@ -162,6 +162,29 @@ h4.post {
 }
 
 
+/*From(View a post)*/
+.view-post-card {
+  background: white;
+  margin: 2rem 10rem 2rem 10rem;
+  box-shadow: 1px black;
+}
+
+.view-body {
+  padding: 40px;
+}
+
+.view-photo {
+  padding: 90px;
+  text-align: center;
+}
+
+.inventory-display {
+  color: D9D9D9;
+  margin: 100px;
+  border: black;
+  text-align: center;
+}
+
 /*From(Create a post)*/
 
 .create-post-container body {
@@ -270,6 +293,12 @@ h4.post {
   }
   
   .input-group input[type="search"] {
+    width: 100%;
+  }
+
+  .view-post-card{
+    flex-basis: 100%;
+    margin: 0;
     width: 100%;
   }
 }
