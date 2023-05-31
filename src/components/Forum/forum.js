@@ -103,6 +103,11 @@ const handleClick = function(event) {
 
   return (
     <div className="form-container">
+        <section className="forum">
+          <h1 className="forum">COMMUNITY</h1>
+          <p className="forum">Explore the forum and create posts.</p>
+         </section>
+    
       <div className="form-header">
         <div className="title-container">
           <h1>Post Forum</h1>
