@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { getDatabase, onValue, ref } from 'firebase/database';
 
 function Form() {
 
@@ -40,6 +41,23 @@ const changeImage = (event) => {
   setImg(URL.createObjectURL(imgFile));
 }
 
+const addRestaurant = (userId, userName, photoUrl, messageText) => {
+  const newPost = {
+    userName: changeName,
+    emailAddress: changeEmail,
+    address: changeAddress,
+    description: changeDescription,
+    timestamp: Date.now()
+  }
+
+  const db = getDatabase(); //url for the database, not the data itself
+  const allPostRef = ref(db, "Restaurant"); //refers to "message" location in the database
+  const profLastNameRef = ref(db, "prof/lastName");
+
+  firebasePush(allMsgRef, newMessage);
+
+/*
+
 function handleSubmit(event) {
   event.preventDefault();
   const formInfo = {
@@ -54,6 +72,8 @@ function handleSubmit(event) {
   posts.push(formInfo);
   setPosts(posts);
 };
+
+*/
 
   return (
     <div className="create-post-container">

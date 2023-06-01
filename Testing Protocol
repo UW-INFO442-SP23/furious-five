@@ -1,3 +1,42 @@
+### User Testing
+
+We will conduct user testing through one-on-one interviews with potential users based on our target stakeholders. The tests will consist of presenting our website to the user and allowing them to interact with it while collecting their feedback.
+
+User Testing Script:
+- Before the start of user testing:
+  - Let user look at the home page of the website and ask:
+    - What do you think this website is for?
+    - What is your first impression of the website?
+    - Would you continue to explore the website based on your impressions of the home page?
+- During the user testing:
+  - Let users explore the website and ask them to say their thoughts and feedback out loud. Below are some questions we will ask when users navigate to a specific page:
+    - Home Page:
+      - Did you learn more about the purpose of the website?
+      - What is your opinion on the way the home page is designed?
+    - Log-in Authentication:
+      - How was the registration process (ex:  fast,  easy, confusing, etc.)?
+      - Do you feel comfortable inputting your information in the sign up process?
+    - Post forum
+      - What is your impression of the food post forum?
+      - Do you find this forum useful if you are trying to look for a place to display the food you are donating/ giving away?
+      - Do you understand the information presented in each of the post?
+      - Would you want to add or modify any information on the post?
+    - Online form (in the post forum)
+      - How did you feel about filling out the online form to create a post in the forum?
+      - Would you want to create another post?
+- After user testing:
+  - Ask users for overall satisfaction of the website
+  - Rank 1-10 for the overall feature
+  - Ask users what they liked and disliked about the website.
+  - Were the colors appealing?
+  - Was it easy to navigate through the website?
+  - Was the message clear?
+  - Does the website look credible?
+  - Were there any frustrations?
+  - What did you like the most about using this website?
+  - What would you change about the website?
+
+### Expected Results
 1. Posting Form Feature
 
 Acceptance Testing Process:
@@ -32,3 +71,14 @@ Acceptance Testing Process:
 Successful Test Result:
 - Able to watch video on homepage.
 - Able to redirect to website with FDA regulations.
+
+## Work Around Bugs
+Our decisions on what bugs to fix first based on the priority of the feature that is experiencing the bug. The features with the highest priority will be the most important to fix first. These include the forum working and displaying properly, restaurants being able to login and authenticate to ensure security and safety of all users, and restaurants being able to submit the form to post which is a key functioning aspect of the website. Based on theses key features, some potential bugs that might occur in which it will be a priority for us to fix are:
+
+- Posts not showing up on the post forum when user just created one
+- Not allowing users to authenticate themselves when using correct credentials
+- Allowing users to login with incorrect credentials
+- Not allowing users to submit the form when creating a post
+
+These potential bugs will be a priority for our team to fix where our key features would be impacted.
+Other smaller bugs on low priority features will then be fixed afterwards such as a video is not showing, an incorrect error message is displayed to users, or a color scheme is not correct in some of the pages. These small bugs will be fixed after the main key feature bugs are solved. This way our team can know which problems to focus on and distribute the task to everyone.
