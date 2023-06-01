@@ -25,4 +25,4 @@ The published site can be viewed here: https://github.com/UW-INFO442-SP23/furiou
 We have two user personas where one are [restaurants](Persona_1.png) and the other are [non-profit organizations](Persona_2_.png).
 
 ## Testing Protocols
-The testing protocols for this project can be found [here](Testing Protocol)
+The testing protocols for this project can be found [here](Testing_Protocol)
